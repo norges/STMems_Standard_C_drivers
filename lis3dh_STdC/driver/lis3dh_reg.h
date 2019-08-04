@@ -214,7 +214,7 @@ typedef struct {
   uint8_t not_used_01       : 1;
   uint8_t i1_overrun        : 1;
   uint8_t i1_wtm            : 1;
-  uint8_t not_used_02       : 1;
+  uint8_t i1_321da          : 1;
   uint8_t i1_zyxda          : 1;
   uint8_t i1_ia2            : 1;
   uint8_t i1_ia1            : 1;
@@ -494,7 +494,7 @@ int32_t lis3dh_temp_data_ready_get(lis3dh_ctx_t *ctx, uint8_t *val);
 
 int32_t lis3dh_temp_data_ovr_get(lis3dh_ctx_t *ctx, uint8_t *val);
 
-int32_t lis3dh_temperature_raw_get(lis3dh_ctx_t *ctx, uint8_t *buff);
+int32_t lis3dh_temperature_raw_get(lis3dh_ctx_t *ctx, int16_t *buff);
 
 int32_t lis3dh_adc_raw_get(lis3dh_ctx_t *ctx, uint8_t *buff);
 
